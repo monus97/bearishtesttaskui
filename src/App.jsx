@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import RagisterPage from './page/registerPage';
+import HomePage from './page/home';
 
 function App() {
   return (
     <div className="App">
-     <RagisterPage/>
+     <HomePage/>
     </div>
   );
 }

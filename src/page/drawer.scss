@@ -1,0 +1,65 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .parent_div {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  
+  .leftside {
+    width: 25%;
+    height: 44rem;
+    border-right: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .rightside {
+    width: 75%;
+    transition: width 0.3s ease;
+  }
+  
+  .rightside.open {
+    width: 71%; 
+  }
+  
+  .sidebar {
+    width: 5%;
+    height: 0;
+    background-color: lightgray;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    position: absolute;
+    top: 44px;
+  }
+  
+  .sidebar.open {
+    height: 80vh;
+  }
+  
+  .list_item{
+    list-style: none;
+    margin: 11px -14px 0px -17px;
+    li{
+        margin: 10px 0px;
+    }
+}
+.icon_toggler{
+    margin: 0px 16px;
+}
+
+
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 18px 39px 22px 45px;
+    margin: 10px 95px 40px 37px;
+    width: 12%;
+  }
+  .cards{
+    display: flex;
+  }
